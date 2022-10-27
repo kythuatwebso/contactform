@@ -1,0 +1,37 @@
+{
+    "name": "websovn/contactform",
+    "description": "Webso",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "Websovn\\": "src/*"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "smarty/smarty": "*",
+        "illuminate/pagination": "^8.44",
+        "illuminate/support": "^8.0",
+        "illuminate/database": "^8.54",
+        "illuminate/container": "^8.54",
+        "illuminate/events": "^8.0",
+        "illuminate/contracts": "^8.54",
+        "illuminate/collections": "^8.54",
+        "illuminate/macroable": "^8.54",
+        "illuminate/config": "^8.55",
+        "illuminate/filesystem": "^8.55",
+        "illuminate/translation": "^8.55",
+        "illuminate/validation": "^8.58",
+        "symfony/var-dumper": "*",
+        "symfony/error-handler": "*",
+        "symfony/console": "^5.3",
+        "illuminate/http": "^8.55"
+    }
+}
