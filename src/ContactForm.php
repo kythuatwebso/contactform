@@ -233,7 +233,7 @@ class ContactForm
      * @param int $showRepeat
      * @return $this
      */
-    public function setNumberShow($showRepeat)
+    public function setNumberShow(int $showRepeat)
     {
         if (is_int($showRepeat)) {
             static::$showRepeat = $showRepeat;
@@ -248,7 +248,7 @@ class ContactForm
      * @param string $view
      * @return string
      */
-    protected static function view($view)
+    protected static function view(string $view)
     {
         if (blank($view)) {
             return;
@@ -272,7 +272,7 @@ class ContactForm
      *
      * @return int|boolean
      */
-    public static function getNumberShow()
+    protected static function getNumberShow()
     {
         return Session::get(static::$sessionName) ?? 0;
     }
@@ -283,7 +283,7 @@ class ContactForm
      * @param integer $num
      * @return $this
      */
-    protected static function addTimesShow($num = 1)
+    protected static function addTimesShow(int $num = 1)
     {
         if (is_int($num) && ! is_bool(Session::get(static::$sessionName))) {
             Session::set(
