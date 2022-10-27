@@ -498,11 +498,11 @@ class ContactForm
         Session::set(static::$sessionName, false);
     }
 
-	/**
-	 * Render kèm nút gọi form nằm dưới website
-	 *
-	 * @return $this
-	 */
+    /**
+     * Render kèm nút gọi form nằm dưới website
+     *
+     * @return $this
+     */
     public function withButton()
     {
         $this->withButton = true;
