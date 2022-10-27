@@ -14,7 +14,7 @@
 					<div class="body p-3">
 
 						{if $description|filled}
-							<div class="pb-3">
+							<div class="pb-3 description">
 								{$description}
 							</div>
 						{/if}
