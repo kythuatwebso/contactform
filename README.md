@@ -1,5 +1,4 @@
 # contactform
-ContactForm
 
 
 ### Cài đặt
@@ -19,6 +18,7 @@ composer require websovn/contactform
 #### Phương thức của Render
 | Phương thức | Mô tả |
 | --- | --- |
+| `static function make()` | Khởi tạo |
 | `description(string $description)` | Set mô tả cho form |
 | `method(string $method)` | Set method cho form (GET, POST) |
 | `action(string $action)` | Set action cho form |
@@ -41,6 +41,7 @@ composer require websovn/contactform
 #### Phương thức của Query
 | Command | Description |
 | --- | --- |
+| `static function make()` | Khởi tạo |
 | `isSendMail(bool $isSend = true)` | Bật, tắt gửi email sau khi gửi thành công |
 | `keyReplace(string $keyReplace)` | Set từ khóa để thay thế trong nội dung gửi email |
 | `subject(string $subject)` | Set tiêu đề gửi email |
